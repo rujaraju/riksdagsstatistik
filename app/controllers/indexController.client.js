@@ -5,9 +5,9 @@
    var addButton = document.querySelector('.btn-add');
    var deleteButton = document.querySelector('.btn-delete');
    var bS = document.querySelector('#bS');
-   var apiUrl = 'https://riksdagsstatistik-ruja.c9users.io/age';
-   var apiUrl2 = 'https://riksdagsstatistik-ruja.c9users.io/gender';
-   var apiUrl3 = 'https://riksdagsstatistik-ruja.c9users.io/leftist';
+   var apiUrl = '/age';
+   var apiUrl2 = '/gender';
+   var apiUrl3 = '/leftist';
    
    function ready (fn) { //function to execute other function only if document is completely loaded
       if (typeof fn !== 'function') {
