@@ -6,6 +6,7 @@ var express = require('express'),
     //mongo = require('mongodb').MongoClient; // npm install mongodb & the rest of setup for c9, ./mongod to start it
 
 var app = express();
+var port = process.env.PORT || 8080;
 
 function gender(res, content, sY, eY, iG) {
     
@@ -236,5 +237,5 @@ console.log("leftist requested")
 });
 
 app.listen(8080, function () {
-        console.log('Listening on port 8080...');
+        console.log('Listening on port ' + port);
     });
