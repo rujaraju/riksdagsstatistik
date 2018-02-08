@@ -1,0 +1,2 @@
+This is a thing called "Riksdagsstatistik" - or "Parliament Statistics".
+Some statistics created based on a database containing all the delegates of the Parliament of Finland through its history of roughly 110 years.
