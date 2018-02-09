@@ -1,7 +1,7 @@
 'use strict';
 
 var express = require('express'),
-    //routes = require('./app/routes/index.js'),
+    routes = require('./app/routes/index.js'),
     fs = require('fs');
     //mongo = require('mongodb').MongoClient; // npm install mongodb & the rest of setup for c9, ./mongod to start it
 
@@ -57,7 +57,7 @@ Object.keys(result.working).forEach(function(key){
     
 })
 }//the loop for all years ends here
-console.log(result.working.Total);
+//console.log(result.working.Total);
 delete result.working  
 res.send(JSON.stringify(result));
 console.log("sent")
