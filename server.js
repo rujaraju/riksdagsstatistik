@@ -194,10 +194,10 @@ app.route('/')
 app.route('/age')
         .get(function (req, res) {
             
-fs.readFile('edusJson.txt', function(err, data) {
+fs.readFile(process.cwd()+'/statistics/edusJson.txt', function(err, data) {
     if (err) throw err;
     var iG = JSON.parse(data.toString('utf8'))
-fs.readFile('fullJson.txt', function(err, data) {
+fs.readFile(process.cwd()+'/statistics/fullJson.txt', function(err, data) {
     if (err) throw err;
     var content = JSON.parse(data.toString('utf8')).content
 age(res,content, 1930, undefined);
@@ -209,10 +209,10 @@ console.log("request came")
 app.route('/gender')
         .get(function (req, res) {
             
-fs.readFile('edusJson.txt', function(err, data) {
+fs.readFile('./statistics/edusJson.txt', function(err, data) {
     if (err) throw err;
     var iG = JSON.parse(data.toString('utf8'))
-fs.readFile('fullJson.txt', function(err, data) {
+fs.readFile('./statistics/fullJson.txt', function(err, data) {
     if (err) throw err;
     var content = JSON.parse(data.toString('utf8')).content
 gender(res,content, undefined, undefined);
@@ -224,10 +224,10 @@ console.log("request came2")
 app.route('/leftist')
         .get(function (req, res) {
             
-fs.readFile('edusJson.txt', function(err, data) {
+fs.readFile('./statistics/edusJson.txt', function(err, data) {
     if (err) throw err;
     var iG = JSON.parse(data.toString('utf8'))
-fs.readFile('fullJson.txt', function(err, data) {
+fs.readFile('./statistics/fullJson.txt', function(err, data) {
     if (err) throw err;
     var content = JSON.parse(data.toString('utf8')).content
 leftist(res,content, undefined, undefined, iG);
